@@ -1,15 +1,21 @@
+//
+//  ControllerView.swift
+//  TableSwapableCell
+//
+//  Created by Robert Herdzik on 8/25/15.
+//  Copyright (c) 2015 Ro. All rights reserved.
+//
+
 import UIKit
 
 class ControllerView: UIView {
 
-    let tableView: UITableView!
+    let tableView = UITableView(frame: CGRectZero)
     
     override init(frame: CGRect) {
-        self.tableView = UITableView(frame: frame)
-        
         super.init(frame: frame)
         
-        self.addSubview(self.tableView)
+        self.addSubview(tableView)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -19,6 +25,6 @@ class ControllerView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        self.tableView.frame = self.bounds
+        tableView.frame = bounds
     }
 }

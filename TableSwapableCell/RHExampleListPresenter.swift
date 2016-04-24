@@ -16,9 +16,8 @@ protocol RHExampleListPresenterProtocol {
 
 class RHExampleListPresenter: RHExampleListPresenterProtocol {
     
-    private let model: Array<String>
-    
     unowned var view: RHExampleListViewProtocol
+    private let model: Array<String>
     
     required init(view: RHExampleListViewProtocol, model: Array<String>) {
         self.view = view
