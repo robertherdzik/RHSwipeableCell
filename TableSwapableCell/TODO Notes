@@ -1,0 +1,6 @@
+- Add functionality when user tap into expanded cell, rest of already expanded cell should collapse
+- Add subtitle cell
+- Deal with rotation
+- Add long press functionality
+- Add MVP pattern
+- Add flow controllers
