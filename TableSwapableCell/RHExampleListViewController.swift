@@ -18,10 +18,10 @@ class RHExampleListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setup()
     }
-
+    
     override func loadView() {
         self.view = ControllerView(frame: CGRectZero)
     }
@@ -33,13 +33,11 @@ class RHExampleListViewController: UIViewController {
     private func setup() {
         self.castView().tableView.delegate = self
         self.castView().tableView.dataSource = self
-        
-        self.castView().tableView.registerClass(RHSwipeableCell.self, forCellReuseIdentifier: rhSwipeableCellIdentifier)
     }
     
     private func customizeRightCellButton(cell: RHSwipeableCell) {
         let rightButtonFont = UIFont(name: "Helvetica", size: 40)
-        let butomConfiguration = RHSwipeableCellConfigurator(bgColor: UIColor.cyanColor(), title: "⭐️", titleFont: rightButtonFont)
+        let butomConfiguration = RHSwipeableCellConfigurator(bgColor: UIColor.cyanColor(), title: "Add", titleFont: rightButtonFont)
         cell.customizeButton(butomConfiguration)
     }
 }
@@ -47,17 +45,22 @@ class RHExampleListViewController: UIViewController {
 extension RHExampleListViewController: RHExampleListViewProtocol {}
 
 extension RHExampleListViewController: UITableViewDataSource {
-  
+    
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return CGFloat(100)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: RHSwipeableCell = tableView.dequeueReusableCellWithIdentifier(rhSwipeableCellIdentifier) as! RHSwipeableCell
+        
+        var cell: RHSwipeableCell! = tableView.dequeueReusableCellWithIdentifier(rhSwipeableCellIdentifier) as? RHSwipeableCell
+        if cell == nil {
+            cell = RHSwipeableCell(style: .Subtitle, reuseIdentifier: "rhSwipeableCellIdentifier")
+        }
+        
         customizeRightCellButton(cell)
         cell.delegate = self
-        cell.titleLabel.font = UIFont(name: "Helvetica", size: 20)
-        cell.textLabel.text =  presenter.titleAtIndex(indexPath.row)
+        cell.textLabel?.text =  presenter.titleAtIndex(indexPath.row)
+        cell.detailTextLabel?.text = "test"
         
         return cell
     }
@@ -68,7 +71,7 @@ extension RHExampleListViewController: UITableViewDataSource {
 }
 
 extension RHExampleListViewController: UITableViewDelegate {
- 
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         

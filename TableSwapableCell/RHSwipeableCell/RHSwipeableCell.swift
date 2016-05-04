@@ -10,6 +10,8 @@ import UIKit
 
 class RHSwipeableCell: UITableViewCell {
     
+    private let collapse_notif_key = "RHSwipeableCell_collapse_key"
+    
     enum RHCellState: Int {
         case Normal
         case Expanded
@@ -18,7 +20,6 @@ class RHSwipeableCell: UITableViewCell {
     private let rightBttnWidth = CGFloat(100)
     
     private let scrollView = UIScrollView(frame: CGRectZero)
-    private var containerView = UIView(frame: CGRectZero)
     private var relatedTableView: UITableView?
     private var rightButton = RHSwipeableCellButton(frame: CGRectZero)
     
@@ -31,15 +32,10 @@ class RHSwipeableCell: UITableViewCell {
             scrollView.contentOffset.x = newValue
         }
     }
-
+    
     var state: RHCellState {
         set {
-            switch newValue {
-            case .Normal:
-                hideRightBttnWithAnimation()
-            case .Expanded:
-                showRightBttnWithAnimation()
-            }
+            adjustCellComponents(newValue)
         }
         get {
             return scrollViewContentOffsetX == 0 ? .Normal : .Expanded
@@ -62,13 +58,6 @@ class RHSwipeableCell: UITableViewCell {
     
     weak var delegate: RHSwipeableCellDelegate?
     
-    var titleLabel = UILabel()
-    override var textLabel: UILabel {
-        get {
-            return titleLabel
-        }
-    }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -79,6 +68,10 @@ class RHSwipeableCell: UITableViewCell {
         setup()
     }
     
+    deinit { // TODO: not called
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -87,18 +80,13 @@ class RHSwipeableCell: UITableViewCell {
         rightButtonFrame = CGRect(x: bounds.size.width - targetRightButtonWidth, y: 0, width: targetRightButtonWidth, height: bounds.height)
         rightButton.frame = rightButtonFrame
         
+        // Content View
+        contentView.frame = bounds
+        
         // Scroll View
         scrollView.frame = bounds
         scrollView.contentSize = CGSize(width: bounds.width + rightButtonFrame.width, height: bounds.height)
         scrollView.contentOffset.x = 0 // TODO: Rotation not supported yet
-        
-        // Container View
-        containerView.frame = scrollView.bounds
-        
-        // Text Label
-        let labelHorizontalPadding = CGFloat(15)
-        titleLabel.sizeToFit()
-        titleLabel.frame = CGRect(x: labelHorizontalPadding, y: 0, width: containerView.bounds.width - 2*labelHorizontalPadding, height: containerView.bounds.height)
     }
     
     override func didMoveToSuperview() {
@@ -106,12 +94,16 @@ class RHSwipeableCell: UITableViewCell {
     }
     
     private func setup() {
+        contentView.backgroundColor = UIColor.whiteColor()
+        
+        // TODO: remove observer
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RHSwipeableCell.collapse), name: collapse_notif_key, object: nil)
+        
         setupScrollView()
-        setupContainerView()
         setupRightButton()
         addTapGestureForContainerView()
     }
-
+    
     private func setupScrollView() {
         scrollView.delegate = self
         scrollView.showsHorizontalScrollIndicator = false
@@ -119,22 +111,30 @@ class RHSwipeableCell: UITableViewCell {
         contentView.addSubview(scrollView)
     }
     
-    private func setupContainerView() {
-        containerView.backgroundColor = UIColor.whiteColor()
-        containerView.addSubview(titleLabel)
-        scrollView.addSubview(containerView)
+    private func setupRightButton() {
+        // Right button should be placet right below 'contentView'
+        insertSubview(rightButton, belowSubview: contentView)
+        
+        rightButton.addTarget(self, action: #selector(RHSwipeableCell.rightButtonTapped(_:)), forControlEvents: .TouchUpInside)
     }
     
-    private func setupRightButton() {
-        // rightButton button should be placed below containerView in view hierarchy
-        scrollView.insertSubview(rightButton, belowSubview: containerView)
-        rightButton.addTarget(self, action: #selector(RHSwipeableCell.rightButtonTapped(_:)), forControlEvents: .TouchUpInside)
+    private func adjustCellComponents(state: RHCellState) {
+        switch state {
+        case .Normal:
+            hideRightBttnWithAnimation()
+        case .Expanded:
+            showRightBttnWithAnimation()
+        }
     }
     
     private func addTapGestureForContainerView() {
         let recognizer = UITapGestureRecognizer(target: self, action:#selector(RHSwipeableCell.handleContainerTap(_:)))
-        recognizer.delegate = self
-        containerView.addGestureRecognizer(recognizer)
+        scrollView.addGestureRecognizer(recognizer)
+    }
+    
+    // TODO: change method name
+    func collapse() {
+        state = .Normal
     }
     
     private func showRightBttnWithAnimation(aniamtion: Bool = true) {
@@ -150,23 +150,22 @@ class RHSwipeableCell: UITableViewCell {
     }
     
     private func adjustRightButton(contentOffsetX: CGFloat) {
-        setupRightButotnPositionX(contentOffsetX)
         rightButton.transformTitle(contentOffsetX)
     }
     
-    /**
-     Right button should be always possitioned according to scrollView offset X
-     
-     - parameter contentOffsetX: scrollView content offset X
-     */
-    private func setupRightButotnPositionX(contentOffsetX: CGFloat) {
-        let buttonPosX = bounds.width - targetRightButtonWidth + contentOffsetX
-        rightButton.frame = CGRect(x: buttonPosX, y: 0, width: targetRightButtonWidth, height: bounds.height)
+    private func updateContentViewOffsetX(contentOffsetX: CGFloat) {
+        contentView.frame = CGRect(x: -contentOffsetX, y: 0, width: contentView.bounds.width, height: contentView.bounds.height)
+    }
+    
+    private func sendCollapseNotification() {
+        NSNotificationCenter.defaultCenter().postNotificationName(collapse_notif_key, object: nil)
     }
     
     func handleContainerTap(recognizer: UITapGestureRecognizer) {
+        sendCollapseNotification()
+        
         if state == .Normal { // Tap action should be passed throught only when cell is in normal state
-            RHSwipeableCellHelper.simulateCellTapEffect(containerView)
+            RHSwipeableCellHelper.simulateCellTapEffect(scrollView)
             
             if let tableView = relatedTableView {
                 if let cellIndxPath = tableView.indexPathForCell(self) {
@@ -180,6 +179,8 @@ class RHSwipeableCell: UITableViewCell {
     
     func rightButtonTapped(button: UIButton) {
         guard let relatedTableView = relatedTableView, indexPath = relatedTableView.indexPathForCell(self)  else { return }
+        
+        sendCollapseNotification()
         
         state = .Normal
         delegate?.rightButtonTapped(relatedTableView, indexPath: indexPath)
@@ -198,13 +199,14 @@ class RHSwipeableCell: UITableViewCell {
 extension RHSwipeableCell: UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        adjustRightButton(scrollViewContentOffsetX)
-        
         if scrollViewContentOffsetX >= rightButtonActualWidth {
             scrollViewContentOffsetX = rightButtonActualWidth
         } else if scrollViewContentOffsetX <= 0 {
             scrollViewContentOffsetX = 0
         }
+        
+        adjustRightButton(scrollViewContentOffsetX)
+        updateContentViewOffsetX(scrollViewContentOffsetX)
     }
     
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -214,7 +216,7 @@ extension RHSwipeableCell: UIScrollViewDelegate {
         if scrollViewContentOffsetX >= rightButtonActualWidth/2 {
             contentOffsetX = rightButtonActualWidth
         }
-
+        
         setScrollViewContentOffsetX(contentOffsetX)
     }
 }
