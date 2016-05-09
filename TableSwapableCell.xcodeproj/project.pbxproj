@@ -14,7 +14,7 @@
 		E10E2BA81CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BA71CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift */; };
 		E10E2BAA1CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BA91CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift */; };
 		E10E2BAC1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BAB1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift */; };
-		E1A4F9181B8CC565008C67A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F9171B8CC565008C67A2 /* AppDelegate.swift */; };
+		E1A4F9181B8CC565008C67A2 /* RHAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F9171B8CC565008C67A2 /* RHAppDelegate.swift */; };
 		E1A4F91A1B8CC565008C67A2 /* RHExampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F9191B8CC565008C67A2 /* RHExampleListViewController.swift */; };
 		E1A4F91F1B8CC565008C67A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A4F91E1B8CC565008C67A2 /* Images.xcassets */; };
 		E1A4F9221B8CC565008C67A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A4F9201B8CC565008C67A2 /* LaunchScreen.xib */; };
@@ -43,7 +43,7 @@
 		E10E2BAB1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListPresenter.swift; sourceTree = "<group>"; };
 		E1A4F9121B8CC565008C67A2 /* TableSwapableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableSwapableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A4F9161B8CC565008C67A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1A4F9171B8CC565008C67A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1A4F9171B8CC565008C67A2 /* RHAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHAppDelegate.swift; sourceTree = "<group>"; };
 		E1A4F9191B8CC565008C67A2 /* RHExampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHExampleListViewController.swift; sourceTree = "<group>"; };
 		E1A4F91E1B8CC565008C67A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E1A4F9211B8CC565008C67A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E10E2BA01CCD489300DDFDC2 /* RHSwipeableCell */,
-				E1A4F9171B8CC565008C67A2 /* AppDelegate.swift */,
+				E1A4F9171B8CC565008C67A2 /* RHAppDelegate.swift */,
 				E1A4F9191B8CC565008C67A2 /* RHExampleListViewController.swift */,
 				E1A4F91E1B8CC565008C67A2 /* Images.xcassets */,
 				E1A4F9201B8CC565008C67A2 /* LaunchScreen.xib */,
@@ -251,7 +251,7 @@
 				E10E2BAC1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift in Sources */,
 				E10E2BA41CCD489300DDFDC2 /* RHSwipeableCell.swift in Sources */,
 				E10E2BA51CCD489300DDFDC2 /* RHSwipeableCellButton.swift in Sources */,
-				E1A4F9181B8CC565008C67A2 /* AppDelegate.swift in Sources */,
+				E1A4F9181B8CC565008C67A2 /* RHAppDelegate.swift in Sources */,
 				E10E2B9D1CCD30B900DDFDC2 /* RHSwipeableCellConfigurator.swift in Sources */,
 				E10E2BA81CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift in Sources */,
 				E1A4F9381B8CC5C7008C67A2 /* ControllerView.swift in Sources */,

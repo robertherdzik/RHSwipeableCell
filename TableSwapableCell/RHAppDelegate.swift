@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  RHAppDelegate.swift
 //  TableSwapableCell
 //
 //  Created by Robert Herdzik on 8/25/15.
@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class RHAppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
