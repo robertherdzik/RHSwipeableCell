@@ -19,7 +19,7 @@
 		E1A4F91F1B8CC565008C67A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A4F91E1B8CC565008C67A2 /* Images.xcassets */; };
 		E1A4F9221B8CC565008C67A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A4F9201B8CC565008C67A2 /* LaunchScreen.xib */; };
 		E1A4F92E1B8CC566008C67A2 /* TableSwapableCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F92D1B8CC566008C67A2 /* TableSwapableCellTests.swift */; };
-		E1A4F9381B8CC5C7008C67A2 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F9371B8CC5C7008C67A2 /* ControllerView.swift */; };
+		E1A4F9381B8CC5C7008C67A2 /* RHExampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F9371B8CC5C7008C67A2 /* RHExampleListView.swift */; };
 		E1B87D451CCCACD400096CE9 /* TODO Notes in Resources */ = {isa = PBXBuildFile; fileRef = E1B87D441CCCACD400096CE9 /* TODO Notes */; };
 /* End PBXBuildFile section */
 
@@ -41,16 +41,16 @@
 		E10E2BA71CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCellButtonConfigProtocol.swift; sourceTree = "<group>"; };
 		E10E2BA91CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCellDelegate.swift; sourceTree = "<group>"; };
 		E10E2BAB1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListPresenter.swift; sourceTree = "<group>"; };
-		E1A4F9121B8CC565008C67A2 /* TableSwapableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableSwapableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A4F9121B8CC565008C67A2 /* RHSwipeableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHSwipeableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A4F9161B8CC565008C67A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A4F9171B8CC565008C67A2 /* RHAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHAppDelegate.swift; sourceTree = "<group>"; };
 		E1A4F9191B8CC565008C67A2 /* RHExampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHExampleListViewController.swift; sourceTree = "<group>"; };
 		E1A4F91E1B8CC565008C67A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E1A4F9211B8CC565008C67A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E1A4F9271B8CC566008C67A2 /* TableSwapableCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableSwapableCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A4F9271B8CC566008C67A2 /* RHSwipeableCell.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHSwipeableCell.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A4F92C1B8CC566008C67A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A4F92D1B8CC566008C67A2 /* TableSwapableCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSwapableCellTests.swift; sourceTree = "<group>"; };
-		E1A4F9371B8CC5C7008C67A2 /* ControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
+		E1A4F9371B8CC5C7008C67A2 /* RHExampleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListView.swift; sourceTree = "<group>"; };
 		E1B87D441CCCACD400096CE9 /* TODO Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TODO Notes"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,8 +96,8 @@
 		E1A4F9131B8CC565008C67A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1A4F9121B8CC565008C67A2 /* TableSwapableCell.app */,
-				E1A4F9271B8CC566008C67A2 /* TableSwapableCellTests.xctest */,
+				E1A4F9121B8CC565008C67A2 /* RHSwipeableCell.app */,
+				E1A4F9271B8CC566008C67A2 /* RHSwipeableCell.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,13 +108,13 @@
 				E10E2BA01CCD489300DDFDC2 /* RHSwipeableCell */,
 				E1A4F9171B8CC565008C67A2 /* RHAppDelegate.swift */,
 				E1A4F9191B8CC565008C67A2 /* RHExampleListViewController.swift */,
-				E1A4F91E1B8CC565008C67A2 /* Images.xcassets */,
-				E1A4F9201B8CC565008C67A2 /* LaunchScreen.xib */,
-				E1A4F9151B8CC565008C67A2 /* Supporting Files */,
-				E1A4F9371B8CC5C7008C67A2 /* ControllerView.swift */,
+				E1A4F9371B8CC5C7008C67A2 /* RHExampleListView.swift */,
 				E10E2B9C1CCD30B900DDFDC2 /* RHSwipeableCellConfigurator.swift */,
 				E10E2BAB1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift */,
+				E1A4F9201B8CC565008C67A2 /* LaunchScreen.xib */,
 				E1B87D441CCCACD400096CE9 /* TODO Notes */,
+				E1A4F91E1B8CC565008C67A2 /* Images.xcassets */,
+				E1A4F9151B8CC565008C67A2 /* Supporting Files */,
 			);
 			path = TableSwapableCell;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1A4F9111B8CC565008C67A2 /* TableSwapableCell */ = {
+		E1A4F9111B8CC565008C67A2 /* RHSwipeableCell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1A4F9311B8CC566008C67A2 /* Build configuration list for PBXNativeTarget "TableSwapableCell" */;
+			buildConfigurationList = E1A4F9311B8CC566008C67A2 /* Build configuration list for PBXNativeTarget "RHSwipeableCell" */;
 			buildPhases = (
 				E1A4F90E1B8CC565008C67A2 /* Sources */,
 				E1A4F90F1B8CC565008C67A2 /* Frameworks */,
@@ -159,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = TableSwapableCell;
+			name = RHSwipeableCell;
 			productName = TableSwapableCell;
-			productReference = E1A4F9121B8CC565008C67A2 /* TableSwapableCell.app */;
+			productReference = E1A4F9121B8CC565008C67A2 /* RHSwipeableCell.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E1A4F9261B8CC566008C67A2 /* TableSwapableCellTests */ = {
+		E1A4F9261B8CC566008C67A2 /* RHSwipeableCellTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1A4F9341B8CC566008C67A2 /* Build configuration list for PBXNativeTarget "TableSwapableCellTests" */;
+			buildConfigurationList = E1A4F9341B8CC566008C67A2 /* Build configuration list for PBXNativeTarget "RHSwipeableCellTests" */;
 			buildPhases = (
 				E1A4F9231B8CC566008C67A2 /* Sources */,
 				E1A4F9241B8CC566008C67A2 /* Frameworks */,
@@ -177,9 +177,9 @@
 			dependencies = (
 				E1A4F9291B8CC566008C67A2 /* PBXTargetDependency */,
 			);
-			name = TableSwapableCellTests;
+			name = RHSwipeableCellTests;
 			productName = TableSwapableCellTests;
-			productReference = E1A4F9271B8CC566008C67A2 /* TableSwapableCellTests.xctest */;
+			productReference = E1A4F9271B8CC566008C67A2 /* RHSwipeableCell.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E1A4F90D1B8CC565008C67A2 /* Build configuration list for PBXProject "TableSwapableCell" */;
+			buildConfigurationList = E1A4F90D1B8CC565008C67A2 /* Build configuration list for PBXProject "RHSwipeableCell" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -216,8 +216,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1A4F9111B8CC565008C67A2 /* TableSwapableCell */,
-				E1A4F9261B8CC566008C67A2 /* TableSwapableCellTests */,
+				E1A4F9111B8CC565008C67A2 /* RHSwipeableCell */,
+				E1A4F9261B8CC566008C67A2 /* RHSwipeableCellTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +254,7 @@
 				E1A4F9181B8CC565008C67A2 /* RHAppDelegate.swift in Sources */,
 				E10E2B9D1CCD30B900DDFDC2 /* RHSwipeableCellConfigurator.swift in Sources */,
 				E10E2BA81CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift in Sources */,
-				E1A4F9381B8CC5C7008C67A2 /* ControllerView.swift in Sources */,
+				E1A4F9381B8CC5C7008C67A2 /* RHExampleListView.swift in Sources */,
 				E10E2BAA1CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift in Sources */,
 				E10E2BA61CCD489300DDFDC2 /* RHSwipeableCellHelper.swift in Sources */,
 			);
@@ -273,7 +273,7 @@
 /* Begin PBXTargetDependency section */
 		E1A4F9291B8CC566008C67A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1A4F9111B8CC565008C67A2 /* TableSwapableCell */;
+			target = E1A4F9111B8CC565008C67A2 /* RHSwipeableCell */;
 			targetProxy = E1A4F9281B8CC566008C67A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -382,7 +382,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ro.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RHSwipeableCell;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -398,7 +398,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ro.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RHSwipeableCell;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -419,8 +419,8 @@
 				INFOPLIST_FILE = TableSwapableCellTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ro.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableSwapableCell.app/TableSwapableCell";
+				PRODUCT_NAME = RHSwipeableCell;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHSwipeableCell.app/RHSwipeableCell";
 			};
 			name = Debug;
 		};
@@ -435,15 +435,15 @@
 				INFOPLIST_FILE = TableSwapableCellTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ro.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableSwapableCell.app/TableSwapableCell";
+				PRODUCT_NAME = RHSwipeableCell;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHSwipeableCell.app/RHSwipeableCell";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1A4F90D1B8CC565008C67A2 /* Build configuration list for PBXProject "TableSwapableCell" */ = {
+		E1A4F90D1B8CC565008C67A2 /* Build configuration list for PBXProject "RHSwipeableCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1A4F92F1B8CC566008C67A2 /* Debug */,
@@ -452,7 +452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1A4F9311B8CC566008C67A2 /* Build configuration list for PBXNativeTarget "TableSwapableCell" */ = {
+		E1A4F9311B8CC566008C67A2 /* Build configuration list for PBXNativeTarget "RHSwipeableCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1A4F9321B8CC566008C67A2 /* Debug */,
@@ -461,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1A4F9341B8CC566008C67A2 /* Build configuration list for PBXNativeTarget "TableSwapableCellTests" */ = {
+		E1A4F9341B8CC566008C67A2 /* Build configuration list for PBXNativeTarget "RHSwipeableCellTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1A4F9351B8CC566008C67A2 /* Debug */,

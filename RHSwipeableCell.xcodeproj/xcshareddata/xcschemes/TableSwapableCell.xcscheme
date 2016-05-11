@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1A4F9111B8CC565008C67A2"
-               BuildableName = "TableSwapableCell.app"
-               BlueprintName = "TableSwapableCell"
-               ReferencedContainer = "container:TableSwapableCell.xcodeproj">
+               BuildableName = "RHSwipeableCell.app"
+               BlueprintName = "RHSwipeableCell"
+               ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1A4F9261B8CC566008C67A2"
-               BuildableName = "TableSwapableCellTests.xctest"
-               BlueprintName = "TableSwapableCellTests"
-               ReferencedContainer = "container:TableSwapableCell.xcodeproj">
+               BuildableName = "RHSwipeableCell.xctest"
+               BlueprintName = "RHSwipeableCellTests"
+               ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A4F9111B8CC565008C67A2"
-            BuildableName = "TableSwapableCell.app"
-            BlueprintName = "TableSwapableCell"
-            ReferencedContainer = "container:TableSwapableCell.xcodeproj">
+            BuildableName = "RHSwipeableCell.app"
+            BlueprintName = "RHSwipeableCell"
+            ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A4F9111B8CC565008C67A2"
-            BuildableName = "TableSwapableCell.app"
-            BlueprintName = "TableSwapableCell"
-            ReferencedContainer = "container:TableSwapableCell.xcodeproj">
+            BuildableName = "RHSwipeableCell.app"
+            BlueprintName = "RHSwipeableCell"
+            ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A4F9111B8CC565008C67A2"
-            BuildableName = "TableSwapableCell.app"
-            BlueprintName = "TableSwapableCell"
-            ReferencedContainer = "container:TableSwapableCell.xcodeproj">
+            BuildableName = "RHSwipeableCell.app"
+            BlueprintName = "RHSwipeableCell"
+            ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
