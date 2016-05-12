@@ -1,5 +1,5 @@
 //
-//  ControllerView.swift
+//  RHExampleListView.swift
 //  TableSwapableCell
 //
 //  Created by Robert Herdzik on 8/25/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ControllerView: UIView {
+class RHExampleListView: UIView {
 
     let tableView = UITableView(frame: CGRectZero)
     

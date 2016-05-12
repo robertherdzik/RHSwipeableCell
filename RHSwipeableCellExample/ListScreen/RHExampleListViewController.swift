@@ -23,11 +23,11 @@ class RHExampleListViewController: UIViewController {
     }
     
     override func loadView() {
-        self.view = ControllerView(frame: CGRectZero)
+        self.view = RHExampleListView(frame: CGRectZero)
     }
     
-    private func castView() -> ControllerView {
-        return self.view as! ControllerView
+    private func castView() -> RHExampleListView {
+        return self.view as! RHExampleListView
     }
     
     private func setup() {
