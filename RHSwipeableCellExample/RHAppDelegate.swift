@@ -30,19 +30,24 @@ class RHAppDelegate: UIResponder, UIApplicationDelegate {
     
     /**
      Method prepare all data related with rootViewController (MVP pattern supported):
-     - mocked model with array of names
+     - mocked model with array of RHPerson objects
      - presenter for view
      - view itself
      
      - returns: prepared view controller
      */
     private func getPrepareRootViewController() -> UIViewController {
-        let listOfNames = ["Robert Herdzik", "Tim Cook", "Natan Ash"] // Some mock example data
+        let rawPersonsData = ["Robert Herdzik", "Tim Cook", "Natan Ash"] // Some mock example data
+        let personsList: [RHPersonProtocol] = rawPersonsData.map {
+            let personData = $0.characters.split{ $0 == " " }.map(String.init)
+            
+            return RHPerson(name: personData.first ?? "", surname: personData.last ?? "", profession: "IT")
+        }
         
         let exampleListViewController = RHExampleListViewController()
         exampleListViewController.title = "RH Swipeable Cell Example"
       
-        let exampleViewPresenter = RHExampleListPresenter(view: exampleListViewController, model: listOfNames)
+        let exampleViewPresenter = RHExampleListPresenter(view: exampleListViewController, model: personsList)
         exampleListViewController.presenter = exampleViewPresenter
         
         return exampleListViewController

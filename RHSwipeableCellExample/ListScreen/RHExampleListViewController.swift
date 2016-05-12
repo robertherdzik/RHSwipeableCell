@@ -50,6 +50,10 @@ extension RHExampleListViewController: UITableViewDataSource {
         return CGFloat(100)
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.numberOfElements()
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell: RHSwipeableCell! = tableView.dequeueReusableCellWithIdentifier(rhSwipeableCellIdentifier) as? RHSwipeableCell
@@ -59,14 +63,10 @@ extension RHExampleListViewController: UITableViewDataSource {
         
         customizeRightCellButton(cell)
         cell.delegate = self
-        cell.textLabel?.text =  presenter.titleAtIndex(indexPath.row)
-        cell.detailTextLabel?.text = "test"
+        cell.textLabel?.text = presenter.titleAtIndex(indexPath.row)
+        cell.detailTextLabel?.text = presenter.subtitleAtIndex(indexPath.row)
         
         return cell
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.numberOfElements()
     }
 }
 

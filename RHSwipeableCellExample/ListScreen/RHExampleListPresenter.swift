@@ -9,19 +9,27 @@
 import Foundation
 
 protocol RHExampleListPresenterProtocol {
-    init(view: RHExampleListViewProtocol, model: Array<String>)
+    
+    init(view: RHExampleListViewProtocol, model: [RHPersonProtocol])
+    
     func numberOfElements() -> Int
     func titleAtIndex(index: Int) -> String?
+    func subtitleAtIndex(index: Int) -> String?
 }
 
 class RHExampleListPresenter: RHExampleListPresenterProtocol {
-    
+
     unowned var view: RHExampleListViewProtocol
-    private let model: Array<String>
+    private let model: [RHPersonProtocol]
     
-    required init(view: RHExampleListViewProtocol, model: Array<String>) {
+    required init(view: RHExampleListViewProtocol, model: [RHPersonProtocol]) {
         self.view = view
         self.model = model
+    }
+
+    private func getModelElementAtIndex(index: Int) -> RHPersonProtocol? {
+        if index < model.count && index >= 0 { return model[index] }
+        else { return nil }
     }
     
     func numberOfElements() -> Int {
@@ -29,6 +37,14 @@ class RHExampleListPresenter: RHExampleListPresenterProtocol {
     }
     
     func titleAtIndex(index: Int) -> String? {
-        return model[index] ?? ""
+        guard let person = getModelElementAtIndex(index) else { return "" }
+        
+        return person.name + person.surname
+    }
+    
+    func subtitleAtIndex(index: Int) -> String? {
+        guard let person = getModelElementAtIndex(index) else { return "" }
+        
+        return person.profession
     }
 }
