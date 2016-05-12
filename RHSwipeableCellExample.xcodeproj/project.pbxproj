@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E10E2B9D1CCD30B900DDFDC2 /* RHSwipeableCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2B9C1CCD30B900DDFDC2 /* RHSwipeableCellConfigurator.swift */; };
-		E10E2BA41CCD489300DDFDC2 /* RHSwipeableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BA11CCD489300DDFDC2 /* RHSwipeableCell.swift */; };
-		E10E2BA51CCD489300DDFDC2 /* RHSwipeableCellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BA21CCD489300DDFDC2 /* RHSwipeableCellButton.swift */; };
-		E10E2BA61CCD489300DDFDC2 /* RHSwipeableCellHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BA31CCD489300DDFDC2 /* RHSwipeableCellHelper.swift */; };
-		E10E2BA81CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BA71CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift */; };
-		E10E2BAA1CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BA91CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift */; };
-		E10E2BAC1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E2BAB1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift */; };
-		E1A4F9181B8CC565008C67A2 /* RHAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F9171B8CC565008C67A2 /* RHAppDelegate.swift */; };
-		E1A4F91A1B8CC565008C67A2 /* RHExampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F9191B8CC565008C67A2 /* RHExampleListViewController.swift */; };
-		E1A4F91F1B8CC565008C67A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A4F91E1B8CC565008C67A2 /* Images.xcassets */; };
-		E1A4F9221B8CC565008C67A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A4F9201B8CC565008C67A2 /* LaunchScreen.xib */; };
-		E1A4F92E1B8CC566008C67A2 /* TableSwapableCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F92D1B8CC566008C67A2 /* TableSwapableCellTests.swift */; };
-		E1A4F9381B8CC5C7008C67A2 /* RHExampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F9371B8CC5C7008C67A2 /* RHExampleListView.swift */; };
-		E1B87D451CCCACD400096CE9 /* TODO Notes in Resources */ = {isa = PBXBuildFile; fileRef = E1B87D441CCCACD400096CE9 /* TODO Notes */; };
+		B14834761CE4F22D007B2C0F /* RHSwipeableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834711CE4F22D007B2C0F /* RHSwipeableCell.swift */; };
+		B14834771CE4F22D007B2C0F /* RHSwipeableCellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834721CE4F22D007B2C0F /* RHSwipeableCellButton.swift */; };
+		B14834781CE4F22D007B2C0F /* RHSwipeableCellButtonConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834731CE4F22D007B2C0F /* RHSwipeableCellButtonConfigProtocol.swift */; };
+		B14834791CE4F22D007B2C0F /* RHSwipeableCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834741CE4F22D007B2C0F /* RHSwipeableCellDelegate.swift */; };
+		B148347A1CE4F22D007B2C0F /* RHSwipeableCellHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834751CE4F22D007B2C0F /* RHSwipeableCellHelper.swift */; };
+		B14834811CE4F241007B2C0F /* RHAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B148347B1CE4F241007B2C0F /* RHAppDelegate.swift */; };
+		B14834861CE4F241007B2C0F /* TODO Notes in Resources */ = {isa = PBXBuildFile; fileRef = B14834801CE4F241007B2C0F /* TODO Notes */; };
+		B14834881CE4F25C007B2C0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14834871CE4F25C007B2C0F /* Images.xcassets */; };
+		B148348B1CE4F27F007B2C0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B14834891CE4F27F007B2C0F /* LaunchScreen.xib */; };
+		B14834951CE4F37C007B2C0F /* RHExampleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834911CE4F37C007B2C0F /* RHExampleListPresenter.swift */; };
+		B14834961CE4F37C007B2C0F /* RHExampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834921CE4F37C007B2C0F /* RHExampleListView.swift */; };
+		B14834971CE4F37C007B2C0F /* RHExampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834931CE4F37C007B2C0F /* RHExampleListViewController.swift */; };
+		B14834981CE4F37C007B2C0F /* RHSwipeableCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14834941CE4F37C007B2C0F /* RHSwipeableCellConfigurator.swift */; };
+		B148349F1CE4F6C8007B2C0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B148349C1CE4F6C8007B2C0F /* Info.plist */; };
+		B14834A11CE4F6EE007B2C0F /* RHExampleListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B148349E1CE4F6C8007B2C0F /* RHExampleListViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,24 +35,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E10E2B9C1CCD30B900DDFDC2 /* RHSwipeableCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCellConfigurator.swift; sourceTree = "<group>"; };
-		E10E2BA11CCD489300DDFDC2 /* RHSwipeableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCell.swift; sourceTree = "<group>"; };
-		E10E2BA21CCD489300DDFDC2 /* RHSwipeableCellButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCellButton.swift; sourceTree = "<group>"; };
-		E10E2BA31CCD489300DDFDC2 /* RHSwipeableCellHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCellHelper.swift; sourceTree = "<group>"; };
-		E10E2BA71CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCellButtonConfigProtocol.swift; sourceTree = "<group>"; };
-		E10E2BA91CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCellDelegate.swift; sourceTree = "<group>"; };
-		E10E2BAB1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListPresenter.swift; sourceTree = "<group>"; };
+		B148346F1CE4F21E007B2C0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RHSwipeableCellExample/Info.plist; sourceTree = SOURCE_ROOT; };
+		B14834711CE4F22D007B2C0F /* RHSwipeableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSwipeableCell.swift; path = RHSwipeableCellExample/RHSwipeableCell/RHSwipeableCell.swift; sourceTree = SOURCE_ROOT; };
+		B14834721CE4F22D007B2C0F /* RHSwipeableCellButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSwipeableCellButton.swift; path = RHSwipeableCellExample/RHSwipeableCell/RHSwipeableCellButton.swift; sourceTree = SOURCE_ROOT; };
+		B14834731CE4F22D007B2C0F /* RHSwipeableCellButtonConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSwipeableCellButtonConfigProtocol.swift; path = RHSwipeableCellExample/RHSwipeableCell/RHSwipeableCellButtonConfigProtocol.swift; sourceTree = SOURCE_ROOT; };
+		B14834741CE4F22D007B2C0F /* RHSwipeableCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSwipeableCellDelegate.swift; path = RHSwipeableCellExample/RHSwipeableCell/RHSwipeableCellDelegate.swift; sourceTree = SOURCE_ROOT; };
+		B14834751CE4F22D007B2C0F /* RHSwipeableCellHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSwipeableCellHelper.swift; path = RHSwipeableCellExample/RHSwipeableCell/RHSwipeableCellHelper.swift; sourceTree = SOURCE_ROOT; };
+		B148347B1CE4F241007B2C0F /* RHAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHAppDelegate.swift; path = RHSwipeableCellExample/RHAppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		B14834801CE4F241007B2C0F /* TODO Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TODO Notes"; path = "RHSwipeableCellExample/TODO Notes"; sourceTree = SOURCE_ROOT; };
+		B14834871CE4F25C007B2C0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RHSwipeableCellExample/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		B148348A1CE4F27F007B2C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = RHSwipeableCellExample/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		B14834911CE4F37C007B2C0F /* RHExampleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListPresenter.swift; sourceTree = "<group>"; };
+		B14834921CE4F37C007B2C0F /* RHExampleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListView.swift; sourceTree = "<group>"; };
+		B14834931CE4F37C007B2C0F /* RHExampleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListViewController.swift; sourceTree = "<group>"; };
+		B14834941CE4F37C007B2C0F /* RHSwipeableCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSwipeableCellConfigurator.swift; sourceTree = "<group>"; };
+		B148349C1CE4F6C8007B2C0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B148349E1CE4F6C8007B2C0F /* RHExampleListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListViewControllerTests.swift; sourceTree = "<group>"; };
 		E1A4F9121B8CC565008C67A2 /* RHSwipeableCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHSwipeableCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1A4F9161B8CC565008C67A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1A4F9171B8CC565008C67A2 /* RHAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHAppDelegate.swift; sourceTree = "<group>"; };
-		E1A4F9191B8CC565008C67A2 /* RHExampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHExampleListViewController.swift; sourceTree = "<group>"; };
-		E1A4F91E1B8CC565008C67A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E1A4F9211B8CC565008C67A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E1A4F9271B8CC566008C67A2 /* RHSwipeableCellExample.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHSwipeableCellExample.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1A4F92C1B8CC566008C67A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1A4F92D1B8CC566008C67A2 /* TableSwapableCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSwapableCellTests.swift; sourceTree = "<group>"; };
-		E1A4F9371B8CC5C7008C67A2 /* RHExampleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHExampleListView.swift; sourceTree = "<group>"; };
-		E1B87D441CCCACD400096CE9 /* TODO Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TODO Notes"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +73,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B14834901CE4F37C007B2C0F /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B14834921CE4F37C007B2C0F /* RHExampleListView.swift */,
+				B14834931CE4F37C007B2C0F /* RHExampleListViewController.swift */,
+				B14834911CE4F37C007B2C0F /* RHExampleListPresenter.swift */,
+				B14834941CE4F37C007B2C0F /* RHSwipeableCellConfigurator.swift */,
+			);
+			name = ListScreen;
+			path = RHSwipeableCellExample/ListScreen;
+			sourceTree = SOURCE_ROOT;
+		};
+		B148349B1CE4F6C8007B2C0F /* RHSwipeableCellExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B148349C1CE4F6C8007B2C0F /* Info.plist */,
+				B148349D1CE4F6C8007B2C0F /* ListScreen */,
+			);
+			path = RHSwipeableCellExampleTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		B148349D1CE4F6C8007B2C0F /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B148349E1CE4F6C8007B2C0F /* RHExampleListViewControllerTests.swift */,
+			);
+			path = ListScreen;
+			sourceTree = "<group>";
+		};
 		E10E2BA01CCD489300DDFDC2 /* RHSwipeableCell */ = {
 			isa = PBXGroup;
 			children = (
-				E10E2BA11CCD489300DDFDC2 /* RHSwipeableCell.swift */,
-				E10E2BA21CCD489300DDFDC2 /* RHSwipeableCellButton.swift */,
-				E10E2BA31CCD489300DDFDC2 /* RHSwipeableCellHelper.swift */,
-				E10E2BA71CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift */,
-				E10E2BA91CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift */,
+				B14834711CE4F22D007B2C0F /* RHSwipeableCell.swift */,
+				B14834721CE4F22D007B2C0F /* RHSwipeableCellButton.swift */,
+				B14834731CE4F22D007B2C0F /* RHSwipeableCellButtonConfigProtocol.swift */,
+				B14834741CE4F22D007B2C0F /* RHSwipeableCellDelegate.swift */,
+				B14834751CE4F22D007B2C0F /* RHSwipeableCellHelper.swift */,
 			);
 			path = RHSwipeableCell;
 			sourceTree = "<group>";
@@ -87,8 +117,7 @@
 		E1A4F9091B8CC565008C67A2 = {
 			isa = PBXGroup;
 			children = (
-				E1A4F9141B8CC565008C67A2 /* TableSwapableCell */,
-				E1A4F92A1B8CC566008C67A2 /* TableSwapableCellTests */,
+				E1A4F9141B8CC565008C67A2 /* RHSwipeableCellExample */,
 				E1A4F9131B8CC565008C67A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,44 +131,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1A4F9141B8CC565008C67A2 /* TableSwapableCell */ = {
+		E1A4F9141B8CC565008C67A2 /* RHSwipeableCellExample */ = {
 			isa = PBXGroup;
 			children = (
 				E10E2BA01CCD489300DDFDC2 /* RHSwipeableCell */,
-				E1A4F9171B8CC565008C67A2 /* RHAppDelegate.swift */,
-				E1A4F9191B8CC565008C67A2 /* RHExampleListViewController.swift */,
-				E1A4F9371B8CC5C7008C67A2 /* RHExampleListView.swift */,
-				E10E2B9C1CCD30B900DDFDC2 /* RHSwipeableCellConfigurator.swift */,
-				E10E2BAB1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift */,
-				E1A4F9201B8CC565008C67A2 /* LaunchScreen.xib */,
-				E1B87D441CCCACD400096CE9 /* TODO Notes */,
-				E1A4F91E1B8CC565008C67A2 /* Images.xcassets */,
+				B14834901CE4F37C007B2C0F /* ListScreen */,
+				B148347B1CE4F241007B2C0F /* RHAppDelegate.swift */,
+				B14834871CE4F25C007B2C0F /* Images.xcassets */,
+				B14834891CE4F27F007B2C0F /* LaunchScreen.xib */,
+				B14834801CE4F241007B2C0F /* TODO Notes */,
 				E1A4F9151B8CC565008C67A2 /* Supporting Files */,
+				B148349B1CE4F6C8007B2C0F /* RHSwipeableCellExampleTests */,
 			);
+			name = RHSwipeableCellExample;
 			path = TableSwapableCell;
 			sourceTree = "<group>";
 		};
 		E1A4F9151B8CC565008C67A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E1A4F9161B8CC565008C67A2 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E1A4F92A1B8CC566008C67A2 /* TableSwapableCellTests */ = {
-			isa = PBXGroup;
-			children = (
-				E1A4F92D1B8CC566008C67A2 /* TableSwapableCellTests.swift */,
-				E1A4F92B1B8CC566008C67A2 /* Supporting Files */,
-			);
-			path = TableSwapableCellTests;
-			sourceTree = "<group>";
-		};
-		E1A4F92B1B8CC566008C67A2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E1A4F92C1B8CC566008C67A2 /* Info.plist */,
+				B148346F1CE4F21E007B2C0F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -227,9 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1B87D451CCCACD400096CE9 /* TODO Notes in Resources */,
-				E1A4F9221B8CC565008C67A2 /* LaunchScreen.xib in Resources */,
-				E1A4F91F1B8CC565008C67A2 /* Images.xcassets in Resources */,
+				B148349F1CE4F6C8007B2C0F /* Info.plist in Resources */,
+				B148348B1CE4F27F007B2C0F /* LaunchScreen.xib in Resources */,
+				B14834861CE4F241007B2C0F /* TODO Notes in Resources */,
+				B14834881CE4F25C007B2C0F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,16 +259,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A4F91A1B8CC565008C67A2 /* RHExampleListViewController.swift in Sources */,
-				E10E2BAC1CCD5BD800DDFDC2 /* RHExampleListPresenter.swift in Sources */,
-				E10E2BA41CCD489300DDFDC2 /* RHSwipeableCell.swift in Sources */,
-				E10E2BA51CCD489300DDFDC2 /* RHSwipeableCellButton.swift in Sources */,
-				E1A4F9181B8CC565008C67A2 /* RHAppDelegate.swift in Sources */,
-				E10E2B9D1CCD30B900DDFDC2 /* RHSwipeableCellConfigurator.swift in Sources */,
-				E10E2BA81CCD48FA00DDFDC2 /* RHSwipeableCellButtonConfigProtocol.swift in Sources */,
-				E1A4F9381B8CC5C7008C67A2 /* RHExampleListView.swift in Sources */,
-				E10E2BAA1CCD494400DDFDC2 /* RHSwipeableCellDelegate.swift in Sources */,
-				E10E2BA61CCD489300DDFDC2 /* RHSwipeableCellHelper.swift in Sources */,
+				B148347A1CE4F22D007B2C0F /* RHSwipeableCellHelper.swift in Sources */,
+				B14834971CE4F37C007B2C0F /* RHExampleListViewController.swift in Sources */,
+				B14834791CE4F22D007B2C0F /* RHSwipeableCellDelegate.swift in Sources */,
+				B14834771CE4F22D007B2C0F /* RHSwipeableCellButton.swift in Sources */,
+				B14834761CE4F22D007B2C0F /* RHSwipeableCell.swift in Sources */,
+				B14834781CE4F22D007B2C0F /* RHSwipeableCellButtonConfigProtocol.swift in Sources */,
+				B14834951CE4F37C007B2C0F /* RHExampleListPresenter.swift in Sources */,
+				B14834811CE4F241007B2C0F /* RHAppDelegate.swift in Sources */,
+				B14834961CE4F37C007B2C0F /* RHExampleListView.swift in Sources */,
+				B14834981CE4F37C007B2C0F /* RHSwipeableCellConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A4F92E1B8CC566008C67A2 /* TableSwapableCellTests.swift in Sources */,
+				B14834A11CE4F6EE007B2C0F /* RHExampleListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +291,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E1A4F9201B8CC565008C67A2 /* LaunchScreen.xib */ = {
+		B14834891CE4F27F007B2C0F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E1A4F9211B8CC565008C67A2 /* Base */,
+				B148348A1CE4F27F007B2C0F /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -378,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = TableSwapableCell/Info.plist;
+				INFOPLIST_FILE = RHSwipeableCellExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ro.$(PRODUCT_NAME:rfc1034identifier)";
@@ -394,7 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = TableSwapableCell/Info.plist;
+				INFOPLIST_FILE = RHSwipeableCellExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ro.$(PRODUCT_NAME:rfc1034identifier)";
@@ -416,7 +428,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TableSwapableCellTests/Info.plist;
+				INFOPLIST_FILE = RHSwipeableCellExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ro.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RHSwipeableCellExample;
@@ -432,7 +444,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TableSwapableCellTests/Info.plist;
+				INFOPLIST_FILE = RHSwipeableCellExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ro.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RHSwipeableCellExample;

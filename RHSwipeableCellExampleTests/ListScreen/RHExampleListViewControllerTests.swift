@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class TableSwapableCellTests: XCTestCase {
+class RHExampleListViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
