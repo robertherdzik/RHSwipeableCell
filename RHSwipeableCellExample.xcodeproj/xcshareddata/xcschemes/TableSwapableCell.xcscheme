@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1A4F9111B8CC565008C67A2"
                BuildableName = "RHSwipeableCell.app"
-               BlueprintName = "RHSwipeableCell"
-               ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
+               BlueprintName = "RHSwipeableCellExample"
+               ReferencedContainer = "container:RHSwipeableCellExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1A4F9261B8CC566008C67A2"
-               BuildableName = "RHSwipeableCell.xctest"
-               BlueprintName = "RHSwipeableCellTests"
-               ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
+               BuildableName = "RHSwipeableCellExample.xctest"
+               BlueprintName = "RHSwipeableCellExampleTests"
+               ReferencedContainer = "container:RHSwipeableCellExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A4F9111B8CC565008C67A2"
             BuildableName = "RHSwipeableCell.app"
-            BlueprintName = "RHSwipeableCell"
-            ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
+            BlueprintName = "RHSwipeableCellExample"
+            ReferencedContainer = "container:RHSwipeableCellExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,8 +67,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A4F9111B8CC565008C67A2"
             BuildableName = "RHSwipeableCell.app"
-            BlueprintName = "RHSwipeableCell"
-            ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
+            BlueprintName = "RHSwipeableCellExample"
+            ReferencedContainer = "container:RHSwipeableCellExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -86,8 +86,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1A4F9111B8CC565008C67A2"
             BuildableName = "RHSwipeableCell.app"
-            BlueprintName = "RHSwipeableCell"
-            ReferencedContainer = "container:RHSwipeableCell.xcodeproj">
+            BlueprintName = "RHSwipeableCellExample"
+            ReferencedContainer = "container:RHSwipeableCellExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
